@@ -1,0 +1,93 @@
+table,
+td {
+  border: 1px solid black;
+}
+
+section {
+  padding-top: 500px;
+}
+.blue {
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+  margin-left: 200px;
+}
+
+.exo4 {
+  display: flex;
+  justify-content: center;
+}
+
+.tableau {
+  width: 1270px;
+  height: 720px;
+  border: 10px solid black;
+}
+
+.tableau img {
+  width: 100%;
+  height: 100%;
+}
+.galerie {
+  display: flex;
+}
+.galerie ul li {
+  list-style: none;
+}
+
+.galerie img {
+  width: 200px;
+  height: 200px;
+}
+
+@media screen and (max-width: 500px) {
+  .exo4 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tableau {
+    width: 100vw;
+    height: 50%;
+  }
+
+  .galerie {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .galerie img {
+    width: 50vw;
+    height: 20vh;
+  }
+
+  .blue {
+    width: 40px;
+    height: 40px;
+    background-color: blue;
+    position: relative;
+    right: 100px;
+  }
+}
+
+.link {
+  text-align: center;
+}
+
+.calculatrice {
+  background-color: rgb(19, 86, 117);
+  width: 100%;
+  height: 400px;
+}
+
+.calculatrice form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#displayText {
+  background-color: yellow;
+  font-weight: bold;
+  text-align: center;
+}

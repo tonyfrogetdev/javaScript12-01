@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Js Initiation Loki</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Copieur</h1>
+    <label for="text" id="labelText">Votre texte ici</label>
+    <input type="text" id="text" name="text" size="10" />
+    <label for="copie" id="labelCopie">Votre copie ici</label>
+    <input type="text" id="copie" name="copie" size="10" />
+
+    <br /><br /><br /><br />
+
+    <h2>Tableau de Calcul</h2>
+    <label for="text" id="labelNumber">Saissisez un nombre</label>
+    <input type="number" id="number" name="number" size="10" />
+    <table>
+      <thead>
+        <tr colspan="3">
+          <td>Nombre</td>
+          <td>Carré</td>
+          <td>Cube</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td id="numberTable">1</td>
+          <td id="numberTableCarre"></td>
+          <td id="numberTableCube"></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <br /><br /><br /><br /><br />
+
+    <h2>Déplacement carré</h2>
+
+    <section>
+      <div class="blue"></div>
+      <button id="bouge">bouge</button>
+    </section>
+
+    <br /><br /><br /><br /><br /><br /><br /><br />
+
+    <h2>Galerie</h2>
+
+    <div class="exo4">
+      <div class="tableau">
+        <img src="/assets/nain.jpg" alt="" />
+      </div>
+
+      <div class="galerie">
+        <ul>
+          <li><img src="/assets/humain.jpeg" alt="" /></li>
+          <li><img src="/assets/nain.jpg" alt="" /></li>
+          <li><img src="/assets/gnome.jpeg" alt="" /></li>
+          <li><img src="/assets/elfe.jpeg" alt="" /></li>
+        </ul>
+        <ul>
+          <li><img src="/assets/orc.jpeg" alt="" /></li>
+          <li><img src="/assets/tauren.jpeg" alt="" /></li>
+          <li><img src="/assets/mort-vivant.jpg" alt="" /></li>
+          <li><img src="/assets/troll.jpg" alt="" /></li>
+        </ul>
+      </div>
+    </div>
+
+    <br /><br /><br /><br /><br /><br /><br /><br />
+    <div class="link">
+      <a href="#displayOn" id="displayOn"> Faire apparaître la calculatrice</a>
+      <span>/</span>
+      <a href="#displayOff" id="displayOff">
+        Faire disparaître la calculatrice</a
+      >
+    </div>
+
+    <div class="calculatrice">
+      <form action="">
+        <input type="text" id="firstNumber" />
+        <select name="calculette" id="operator">
+          <option value="1">+</option>
+          <option value="2">-</option>
+          <option value="3">*</option>
+          <option value="4">/</option>
+        </select>
+        <input type="text" id="secondNumber" />
+        <input type="submit" value="Calculer" id="calculate" />
+      </form>
+      <div id="textInfo">
+        <p id="displayText"></p>
+      </div>
+    </div>
+    <script src="/script.js"></script>
+  </body>
+</html>
